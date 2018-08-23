@@ -29,5 +29,7 @@
 </header>
 
 <nav id="siteNavigator">
-<?php wp_nav_menu( 'theme_location = header-navi' ); ?>
+  <?php
+    if ( has_nav_menu( 'header-navi' )){ wp_nav_menu( array('theme_location' => 'header-navi' )); };
+  ?>
 </nav>

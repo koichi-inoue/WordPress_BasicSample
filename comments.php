@@ -12,6 +12,7 @@
     <div class="comment-page-link">
       <?php paginate_comments_links(); ?>
     </div>
+
   <?php
   endif;
 
@@ -21,4 +22,5 @@
   );
   comment_form($args);
   ?>
+
 </div>

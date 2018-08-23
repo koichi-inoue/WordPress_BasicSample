@@ -1,6 +1,8 @@
-
 <footer>
-    <p id="copyright" class="wrapper">&copy <?php bloginfo('name'); ?> All Rights Reserved.</p>
+  <?php
+    if ( has_nav_menu( 'footer-navi' )){ wp_nav_menu( array('theme_location' => 'footer-navi' )); }
+  ?>
+  <p id="copyright" class="wrapper"><?php bloginfo('name'); ?></p>
 </footer>
 
 <?php wp_footer(); ?>
