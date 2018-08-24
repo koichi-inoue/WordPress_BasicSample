@@ -2,6 +2,8 @@
 
 <main>
 
+  <article>
+
   <?php
   if (have_posts()) : // WordPress Loop
     while (have_posts()) : the_post(); ?>
@@ -20,6 +22,8 @@
   <?php
   endif;
   ?>
+
+  </article>
 
   <?php get_sidebar(); ?>
 

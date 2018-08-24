@@ -4,6 +4,11 @@
     <?php dynamic_sidebar( 'sidebar-1' ); ?>
 <?php else: ?>
 
+
+  <div class="widget">
+      <?php get_search_form(); ?>
+  </div>
+
   <div class="widget">
     <h2>Categories</h2>
     <ul>
@@ -12,7 +17,7 @@
   </div>
 
   <div class="widget">
-    <h2>Recent posts</h2>
+    <h2>RecentPosts</h2>
     <ul>
       <?php $args = array(
         'type' => 'postbypost',
