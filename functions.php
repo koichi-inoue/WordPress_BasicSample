@@ -1,5 +1,8 @@
 <?php
 
+  // メインカラム幅｜これが定義されていると画像アップの際に最適化される
+  if ( ! isset( $content_width ) ) $content_width = 576;
+
   // カスタムメニュー ON
   add_theme_support('menus');
 

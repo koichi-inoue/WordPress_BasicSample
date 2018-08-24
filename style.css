@@ -133,8 +133,6 @@ header {
       }
 
 
-
-
 /****** main ******/
 
 main {
@@ -204,9 +202,7 @@ aside {
     }
 
 
-  .tagcloud a{
-    white-space: nowrap;
-  }
+
 
 
 /****** footer ******/
@@ -218,7 +214,6 @@ footer {
   text-align: center;
   color: #fff;
 }
-
 
   footer ul.menu {
     text-align: center;
@@ -293,6 +288,9 @@ footer {
     font-size: 0.75rem;
 }
 
+.tagcloud a{
+  white-space: nowrap;
+}
 
 
 /*********** WordPress Misc ***********/
