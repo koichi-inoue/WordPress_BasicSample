@@ -2,7 +2,7 @@
   <?php
     if ( has_nav_menu( 'footer-navi' )){ wp_nav_menu( array('theme_location' => 'footer-navi' )); }
   ?>
-  <p id="copyright" class="wrapper"><?php bloginfo('name'); ?></p>
+  <p id="copyright">&copy; <?php bloginfo('name'); ?></p>
 </footer>
 
 <?php wp_footer(); ?>
