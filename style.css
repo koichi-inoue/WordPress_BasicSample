@@ -54,20 +54,17 @@ blockquote{
 
 header {
   position: relative;
-  height: 9rem;
+  height: 7rem;
   border-bottom: 1px solid #ddd;
 }
 
   header #siteTitle{
-    position: absolute;
-    top: 3rem;
-    left: 8%;
+    margin-top: 3rem;
+    text-align: center;
   }
 
   header #description {
-    position: absolute;
-    top: 6rem;
-    left: 8%;
+    text-align: center;
     font-size: 0.75rem;
     color: #777;
   }
@@ -78,8 +75,8 @@ header {
   position: sticky;
   top: 0;
   left: 0;
-  padding: 0 8%;
-  width: 84%;
+  padding: 0 10%;
+  width: 80%;
   background: white;
   box-shadow: 0 3px 0.3125rem rgba(0,0,0,.2);
   margin-bottom: 4rem;
@@ -138,15 +135,16 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 8%;
-  width: 84%;
+  margin: 0 auto;
+  width: 70%;
+  max-width: 1024px;
   margin-bottom: 2rem;
 }
 
 /****** article ******/
 
 article {
-  width: 67%;
+  flex: 3;
 }
 
 article .post,
@@ -162,14 +160,52 @@ article .navigation {
   border-top: 1px dotted gray;
   padding-top: 0.5rem;
   border-bottom: 1px dotted gray;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
+}
+
+/****** article home only ******/
+
+#home_gallery{
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#home_gallery .post{
+  width:200px;
+  padding: 1rem;
+  margin: 0;
+}
+
+#home_gallery .post img {
+  width: 200px;
+  height: 200px;
+}
+
+#home_gallery .post p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+#home_gallery_navigation h2.screen-reader-text {
+  display: none;
+}
+
+#home_gallery_navigation div.nav-links {
+  text-align: center;
 }
 
 
 /****** aside ******/
 
 aside {
-  width: 25%;
+  flex: 1;
+  margin-left: 4rem;
   min-width: 12rem;
 }
 
